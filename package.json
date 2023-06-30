@@ -1,12 +1,11 @@
 {
   "name": "4everzyanya",
-  "homepage": "https://johananim.github.io/4everzyanya/",
+  "homepage": "https://metalalchemist.github.io/4everzyanya/",
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
     "bootstrap": "^5.3.0",
     "emailjs-com": "^3.2.0",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0"
