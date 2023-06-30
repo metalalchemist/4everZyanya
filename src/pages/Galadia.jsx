@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Galadia = () => {
@@ -13,8 +14,9 @@ const Galadia = () => {
 
 
 	return (
-		<main className='Galadia container' id="main">
+		<main className='Galadia container' id="main" tabIndex={-1}>
 			<h1 className='mb-4'>Galadia: nuestro primer juego para móviles</h1>
+			<h2>Descripción</h2>
 			<p className='lead'>
 				Bienvenido al bosque de brokilawn, la entrada a un nuevo mundo lleno de posibilidades para ti. Si disfrutas la lectura, la fantasía y las buenas historias, Esta app no solo es la indicada, sino que es la mejor.<br /><br />
 				Descubre a los Gnanin, una raza rechazada y desterrada del otro lado de las montañas, donde deben luchar por su supervivencia en un lugar donde solo las bestias se atreven a merodear.<br />
@@ -32,7 +34,9 @@ const Galadia = () => {
 				galadia no requiere conexiónn a internet ni accede a ningún permiso sencible, tales como el micrófono la cámara o las llamadas.
 				para mas información, puedes entrar <a href="/src/assets/gprivacy.html">aquí</a>
 			</p>
-
+			<h2>Sobre Galadia</h2>
+			<p className='lead'>
+				puedes ver como surgió la idea de crear esta app pulsando <Link to='/Gabouth'>Aquí</Link>.</p>
 		</main>
 	);
 }

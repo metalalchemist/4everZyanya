@@ -8,6 +8,7 @@ import './App.css';
 // importar el logo
 import logo from './assets/logo.png';
 
+import Donar from './pages/Donar';
 import About from './pages/About';
 import Gabouth from './pages/Gabouth';
 import Contact from './pages/Contact';
@@ -28,10 +29,12 @@ function Principal() {
 
 	useEffect(() => {
 		document.title = `4everzyanya - ${getPageTitle(location.pathname)}`;
+		// enfocar el encabezado cuando se cambia de página
+		document.getElementById('main').focus();
 	}, [location]);
 
 	function getPageTitle(pathname) {
-		return pathname==='/' ? 'inicio' : pathname==='/gdownload' ? 'nuestros proyectos' : pathname==='/about' ? 'quienes somos' : pathname==='/contact' ? 'contáctanos' : pathname==='/Galadia' ? 'Galadia' : pathname==='/Gabouth' ? 'Sobre nosotros' : '404';
+		return pathname==='/' ? 'inicio' : pathname==='/gdownload' ? 'nuestros proyectos' : pathname==='/about' ? 'quienes somos' : pathname==='/contact' ? 'contáctanos' : pathname==='/Galadia' ? 'Galadia' : pathname==='/Gabouth' ? 'Sobre nosotros' : pathname==='/Donar' ? 'contribuye con nuestro proyecto' : '404';
 	}	
 	
 	// ejecuta la función addKeyboardEvent() cuando se monta el componente
@@ -76,14 +79,15 @@ function Principal() {
 							</li>
 							<li className="nav-item">
 								<NavLink to="/about" {...navLinkProps}>
-									Acerca de
+									¿quienes somos?
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to="/Gabouth" {...navLinkProps}>
-									Sobre nosotros
+								<NavLink to="/Donar" {...navLinkProps}>
+									Contribuye con nuestro proyecto.
 								</NavLink>
 							</li>
+
 							<li className="nav-item">
 								<NavLink to="/contact" {...navLinkProps}>
 									Contacto
@@ -106,6 +110,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/gdownload" element={<GDownload />} />
+					<Route path="/donar" element={<Donar />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/Gabouth" element={<Gabouth />} />
 					<Route path="/contact" element={<Contact />} />

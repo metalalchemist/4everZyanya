@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function GDownload() {
 
 	return (
-		<main className="GDownload container" id="main">
+		<main className="GDownload container" id="main" tabIndex={-1}>
 			<h1 className="mb-4">Nuestros proyectos y aplicaciones accesibles</h1>
 			<h2 className="mb-4">Galadia: nuestro primer juego para móviles</h2>
 			<p className="lead">

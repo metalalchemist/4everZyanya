@@ -9,7 +9,7 @@ const Footer = () => {
 				<div className='row'>
 					<div className='col-md-4'>
 						<h2 className='mb-4'>Pie de página</h2>
-						<p className='mb-4'>Puedes visitar nuestras diversas redes sociales donde podrás mantenerte al día de cualquier información sobre nuestro proyecto:</p>
+						<p className='mb-4'>Visítanos en nuestras diversas redes sociales donde podrás mantenerte al día de cualquier información sobre nuestro proyecto:</p>
 						{/* la lista de redes sociales */}
 						<ul className='list-unstyled' aria-label='Redes sociales'>
 							{/* poner los logos de las redes sociales */}

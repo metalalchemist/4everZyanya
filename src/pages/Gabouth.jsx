@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Gabouth = () => {
 	return (
-		<main className='Gabouth container' id="main">
+		<main className='Gabouth container' id="main" tabIndex={-1}>
 			<section className='text-center'>
 				<h1 className='mb-4'>Sobre nosotros</h1>
 				<p className='lead mb-5'>
