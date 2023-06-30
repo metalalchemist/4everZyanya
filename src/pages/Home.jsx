@@ -19,10 +19,10 @@ const Home = () => {
 							A través de nuestras experiencias, buscamos crear conciencia y promover una sociedad incluyente.
 						</p>
 						<p className='mb-4'>
-							4everzyanya es el testimonio de la fuerza del espíritu humano y la capacidad de trascender las limitaciones impuestas por el destino. Es un tributo a la belleza de la vida, y una invitación a sembrar semillas de pensamiento en un mundo en constante cambio.
+							4everzyanya es el testimonio de la fuerza del espíritu humano y la capacidad de trascender las limitaciones impuestas por el destino. Es una invitación a sembrar semillas de pensamiento en un mundo en constante cambio.
 						</p>
 						<p>
-							Adéntrate en nuestras experiencias, explora nuestro espacio y déjate llevar por la magia de las semillas de pensamiento que hemos plantado.
+							Adéntrate en nuestras experiencias, explora nuestro espacio y déjate llevar.
 						</p>
 					</div>
 				</div>
