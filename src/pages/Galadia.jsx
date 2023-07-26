@@ -32,8 +32,7 @@ const Galadia = () => {
 			<h2>Política de privasidad.</h2>
 			<p className='lead'>
 				galadia no requiere conexiónn a internet ni accede a ningún permiso sencible, tales como el micrófono la cámara o las llamadas.
-				para mas información, puedes entrar <a href="/src/assets/gprivacy.html">aquí</a>
-			</p>
+				para mas información, puedes entrar <a href="gprivacy.html">aquí</a>			</p>
 			<h2>Sobre Galadia</h2>
 			<p className='lead'>
 				puedes ver como surgió la idea de crear esta app pulsando <Link to='/Gabouth'>Aquí</Link>.</p>
