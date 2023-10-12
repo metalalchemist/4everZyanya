@@ -13,14 +13,11 @@ const Home = () => {
 				<div className='row'>
 					<div className='col-md-8 mx-auto'>
 						<p className='mb-4'>
-							Nuestra página ha sido creada por personas ciegas, con el propósito de compartir testimonios de individuos destacados con diversas discapacidades.
+							Nuestra página ha sido creada por personas ciegas, con el propósito de compartirte nuestras experiencias.
 						</p>
-						<p className='mb-4'>
-							A través de nuestras experiencias, buscamos crear conciencia y promover una sociedad incluyente.
-						</p>
-						<p className='mb-4'>
-							4everzyanya es el testimonio de la fuerza del espíritu humano y la capacidad de trascender las limitaciones impuestas por el destino. Es una invitación a sembrar semillas de pensamiento en un mundo en constante cambio.
-						</p>
+          <p>
+            Nuestra misión es llegar a la mayor cantidad de personas posibles para cambiar la percepción que tienen sobre nosotros. Queremos mostrar que llevamos una vida plena y normal, que podemos formar familias y realizar actividades cotidianas. A través de nuestros videos, compartimos de manera positiva y sincera cómo nos desenvolvemos en la vida diaria. Brindamos a aquellos que nunca han interactuado con alguien con discapacidad la oportunidad de observar y ser testigos de cómo es realmente la vida de personas como nosotros, en este caso, viviendo con ceguera, sin romantizar ni victimizar la discapacidad.
+          </p>
 						<p>
 							Adéntrate en nuestras experiencias, explora nuestro espacio y déjate llevar.
 						</p>
