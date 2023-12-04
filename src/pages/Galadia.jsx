@@ -6,7 +6,7 @@ const Galadia = () => {
 
 	const handleDownload = () => {
 		if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-			window.location.href = 'https://apps.apple.com/app/id6447562835';
+			window.location.href = 'https://apps.apple.com/us/app/galadia/id6473560423';
 		} else {
 			window.location.href = 'https://play.google.com/store/apps/details?id=com.fusion11.brokilawn';
 		}
@@ -29,7 +29,7 @@ const Galadia = () => {
 				Descargar en
 				{/(ipod|iphone|ipad)/i.test(navigator.userAgent) ? ' App Store' : ' Google Play'}
 			</button>
-			<h2>Política de privasidad.</h2>
+			<h2>Política de privacidad.</h2>
 			<p className='lead'>
 				galadia no requiere conexiónn a internet ni accede a ningún permiso sencible, tales como el micrófono la cámara o las llamadas.
 				para mas información, puedes entrar <a href="gprivacy.html">aquí</a>			</p>
