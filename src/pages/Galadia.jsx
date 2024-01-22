@@ -8,7 +8,7 @@ const Galadia = () => {
 		if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
 			window.location.href = 'https://apps.apple.com/us/app/galadia/id6473560423';
 		} else {
-			window.location.href = 'https://play.google.com/store/apps/details?id=com.fusion11.brokilawn';
+			window.location.href = 'https://play.google.com/store/apps/details?id=com.zyany.brokilawn';
 		}
 	};
 
