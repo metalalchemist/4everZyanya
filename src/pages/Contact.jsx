@@ -10,9 +10,30 @@ const Contact = () => {
 	})();
 	function sendEmail(e) {
 		e.preventDefault();
+		//comprueba si existe la clave hora en localstorage
+		if (localStorage.getItem('hora')) {
+			//consigue la hora actual y comprueba si hay diferencia de una hora con la hora guardada en localstorage
+			let date = new Date();
+			let hora = localStorage.getItem('hora');
+			let hora2 = new Date(hora);
+			let diferencia = date - hora2;
+			if (diferencia < 3600000) {
+				//si la diferencia es menor a una hora, muestra un mensaje de error
+				document.getElementById('mensaje_send_failed').textContent = 'lo siento, solo puedes enviar un mensaje cada hora';
+				document.getElementById('mensaje_send_failed').classList.add('alert-danger');
+				setTimeout(() => {
+					document.getElementById('mensaje_send_failed').classList.remove('alert', 'alert-danger');
+					document.getElementById('mensaje_send_failed').textContent = '';
+				}, 5000);
+				return;
+			}
+		}
 		emailjs.sendForm('service_9d9mrlt', 'contactform', e.target)
 			.then((result) => {
 				console.log(result.text);
+				//crea un localstorage con la hora actual
+				let date = new Date();
+				localStorage.setItem('hora', date);
 				document.getElementById('mensaje_send_failed').textContent = '¡Su mensaje fue enviado con éxito!';
 				document.getElementById('mensaje_send_failed').classList.add('alert-success');
 				document.getElementById('contactform').reset();
