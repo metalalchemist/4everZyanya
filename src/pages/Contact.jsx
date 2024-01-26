@@ -56,6 +56,8 @@ const Contact = () => {
 		<main className='Contact container' id="main" tabIndex={-1}>
 			<div className="container">
 				<h1 className="mb-4">Contáctanos aquí</h1>
+
+				<h2><a href='https://wa.me/526862891452'>chatea con nosotros por WhatsApp.</a></h2><br />
 				<p id="mensaje_send_failed" className="alert" role="alert"></p>
 				<form id="contactform" onSubmit={sendEmail} role='form' aria-label='Formulario de contacto'>
 					<div className="mb-3">
