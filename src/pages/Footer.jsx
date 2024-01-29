@@ -42,7 +42,7 @@ const Footer = () => {
 					</div>
 					<div className='col-md-4'>
 						<p className='mb-4'>
-							&copy; Copyrigth 2023 - 4everzyanya
+							&copy; Copyrigth {new Date().getFullYear()} - 4everzyanya
 						</p>
 					</div>
 				</div>
