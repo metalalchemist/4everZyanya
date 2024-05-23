@@ -16,6 +16,7 @@ import GDownload from './pages/GDownload';
 import Home from './pages/Home';
 import Footer from './pages/Footer';
 import Galadia from './pages/Galadia';
+import Changer from './pages/Changer';
 
 const navLinkProps = {
 	exact: true,
@@ -34,7 +35,7 @@ function Principal() {
 	}, [location]);
 
 	function getPageTitle(pathname) {
-		return pathname==='/' ? 'inicio' : pathname==='/gdownload' ? 'nuestros proyectos' : pathname==='/about' ? 'quienes somos' : pathname==='/contact' ? 'contáctanos' : pathname==='/Galadia' ? 'Galadia' : pathname==='/Gabouth' ? 'Sobre nosotros' : pathname==='/Donar' ? 'contribuye con nuestro proyecto' : '404';
+		return pathname==='/' ? 'inicio' : pathname==='/gdownload' ? 'nuestros proyectos' : pathname==='/about' ? 'quienes somos' : pathname==='/contact' ? 'contáctanos' : pathname==='/Galadia' ? 'Galadia' : pathname==='/Gabouth' ? 'Sobre nosotros' : pathname==='/Donar' ? 'contribuye con nuestro proyecto' : pathname==='/Changer' ? 'Device Changer, tu administrador de dispositivos de audio.' : '404';
 	}	
 	
 	// ejecuta la función addKeyboardEvent() cuando se monta el componente
@@ -115,6 +116,7 @@ function App() {
 					<Route path="/Gabouth" element={<Gabouth />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/Galadia" element={<Galadia />} />
+					<Route path="/Changer" element={<Changer />} />
 				</Routes>
 				<Footer />	
 			</div>
