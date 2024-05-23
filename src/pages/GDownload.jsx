@@ -20,6 +20,11 @@ function GDownload() {
 				puedes reportar errores desde <a href='https://github.com/metalalchemist/VeTube/issues'>aquí.</a><br />
 				puedes descargar la versión mas reciente desde<a href='				https://github.com/metalalchemist/VeTube/releases'> aquí.</a>
 			</p>
+			<h2 className="mb-4">Device Changer: administra tus dispositivos de audio desde cualquier ventana.</h2>
+			<p className="lead">
+				este programa te permitirá poder administrar tus dispositivos de audio desde cualquier ventana.
+				si deseas mas información de este programa, entra <Link to="/Changer">aquí</Link>
+			</p>
 		</main>
 	);
 }
